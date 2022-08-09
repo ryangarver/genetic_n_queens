@@ -12,7 +12,7 @@ Defaults to 8-queens (standard chess board)
 Options:
 ```
 -n
-  Select an alternate board size, e.g. n=10.  Default 8
+  Choose an alternate board size.  Default 8
 --pop
   The number of solutions in a population.  Default 1000
 --max
@@ -23,7 +23,7 @@ Options:
   changed randomly.  Default 0.05
 --replacement_rate
   The percentage of each solution generation that is replaced by child
-  solutions vs keeping fit ancestors
+  solutions vs keeping fit ancestors.  Default 0.75
 ```
 
 ## Author
