@@ -1,39 +1,33 @@
 # GeneticNQueens
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/genetic_n_queens`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'genetic_n_queens'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install genetic_n_queens
+This is a Ruby implementation of a genetic algorithm to solve the
+[N Queens Problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
 
 ## Usage
 
-TODO: Write usage instructions here
+`ruby genetic_n_queens.rb`
 
-## Development
+Defaults to 8-queens (standard chess board)
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Options:
+-n
+  Select an alternate board size, e.g. n=10.  Default 8
+--pop
+  The number of solutions in a population.  Default 1000
+--max
+  The maximum number of generations to try and find a solution.  This will
+  need to be increased for larger N values.  Default 50
+--mutation_rate
+  The percentage of new child Solutions that have one gene (i.e. queen position)
+  changed randomly.  Default 0.05
+--replacement_rate
+  The percentage of each solution generation that is replaced by child
+  solutions vs keeping fit ancestors
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Author
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/genetic_n_queens.
+Ryan Garver rgarver@terakeet.com
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The code is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
