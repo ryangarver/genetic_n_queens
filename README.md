@@ -10,6 +10,7 @@ This is a Ruby implementation of a genetic algorithm to solve the
 Defaults to 8-queens (standard chess board)
 
 Options:
+```
 -n
   Select an alternate board size, e.g. n=10.  Default 8
 --pop
@@ -23,6 +24,7 @@ Options:
 --replacement_rate
   The percentage of each solution generation that is replaced by child
   solutions vs keeping fit ancestors
+```
 
 ## Author
 
